@@ -23,9 +23,11 @@ function UserList({ users, onUserClick, handleLoadMore, loading }) {
         {Row}
       </List>
 
-      <button onClick={handleLoadMore} disabled={loading}>
-        {loading ? "Загрузка..." : "Загрузить больше"}
-      </button>
+      {users.length >= 50 && (
+        <button className='btn' onClick={handleLoadMore} disabled={loading}>
+          {loading ? "Загрузка..." : "Загрузить больше"}
+        </button>
+      )}
     </div>
   );
 }

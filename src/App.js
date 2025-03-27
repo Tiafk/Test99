@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import User from "./components/user";
 import UserList from './components/userList';
+// import userD from './users.json';
 
 import './scss/_global.scss';
 
@@ -15,7 +16,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch("/users.json"); // Загружаем файл JSON
+      const response = await fetch(process.env.PUBLIC_URL + "/users.json"); // Загружаем файл JSON
       const data = await response.json();
       
       // Разбиваем данные на страницы и добавляем только текущую страницу в состояние
