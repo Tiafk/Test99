@@ -1,0 +1,124 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wrapper .header {
+  padding: 10px;
+  background-color: aqua;
+  color: black;
+  font-weight: 700;
+}
+.wrapper .header .userName {
+  width: 100%;
+  max-width: 40%;
+  padding: 10px;
+  border: 2px solid #6b6ddb;
+}
+.wrapper .container {
+  display: grid;
+  width: 100%;
+  max-width: 500px;
+  grid-template-rows: repeat(2, 106px);
+  grid-template-areas: "avatar information" "avatar btnSave";
+  margin: 20px 0 0 20px;
+}
+.wrapper .container .avatar {
+  position: relative;
+  display: flex;
+  grid-area: avatar;
+  max-width: 100px;
+  max-height: 100px;
+  height: 100%;
+  border-radius: 50px;
+  border: 3px solid #aeaeae;
+  background-color: #aeaeae;
+  z-index: 5;
+}
+.wrapper .container .avatar img {
+  width: 100%;
+  z-index: 5;
+}
+.wrapper .container .avatar span {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(76, 214, 76);
+  border-radius: 50%;
+  z-index: 10;
+}
+.wrapper .container .information {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: 350px;
+  grid-area: information;
+}
+.wrapper .container .information .inf {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.wrapper .container .information .inf .title {
+  color: #aeaeae;
+  font-size: 20px;
+}
+.wrapper .container .information .inf input {
+  width: 100%;
+  max-width: 200px;
+  color: #000;
+  border: 1px solid #aeaeae;
+  outline: none;
+  border-radius: 0;
+  padding: 5px 10px;
+}
+.wrapper .container .information .inf input::-moz-placeholder {
+  color: #aeaeae;
+}
+.wrapper .container .information .inf input::placeholder {
+  color: #aeaeae;
+}
+.wrapper .container .btnSave {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  grid-area: btnSave;
+  align-self: start;
+  background: aqua;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+  border: 0;
+  padding: 8px 14px;
+}
+
+.wrapperList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 250px;
+}
+.wrapperList .userItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 0 20px;
+}
+.wrapperList .userItem:hover {
+  background-color: aqua;
+  transition: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=main.module.css.map */

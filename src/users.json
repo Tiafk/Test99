@@ -1,0 +1,28 @@
+{
+    "users":[
+        {
+            "name": "Пользователь 1", 
+            "jobTitle": "Менеджер",
+            "department": "fdsfdsf", 
+            "company": ""
+        },
+        {
+            "name": "Пользователь 2", 
+            "jobTitle": "Офик",
+            "department": "stdsaring", 
+            "company": ""
+        },
+        {
+            "name": "Пользователь 3", 
+            "jobTitle": "It",
+            "department": "dsa", 
+            "company": ""
+        },
+        {
+            "name": "Пользователь 4", 
+            "jobTitle": "xz",
+            "department": "xz", 
+            "company": "xz"
+        }
+    ]
+}

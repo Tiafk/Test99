@@ -1,0 +1,22 @@
+.wrapperList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    
+    .userItem {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+        user-select: none;
+        padding: 0 20px;
+
+        &:hover {
+            background-color: aqua;
+            transition: .3s ease;
+        }
+    }
+}
